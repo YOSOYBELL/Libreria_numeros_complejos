@@ -50,3 +50,8 @@ Obteniendo como resultado,
 1-1.68i
 2.24 e^(i -0.46)
 -0.46
+
+```
+
+Autor 
+Diego Alejandro Rojas Ramírez - Librería Operaciones con Números Complejos -

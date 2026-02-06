@@ -1,5 +1,6 @@
 # Libreria Números Complejos
-En la primera parte encontrarás una librería que contiene las siguientes operaciones con los números complejos:
+En la primera parte encontrarás una librería que contiene las siguientes operaciones con los números complejos, sin utilizar el tipo de dato complex de Python.
+Los números complejos se representan mediante tuplas de la forma (real, imaginario).
 
 -Suma
 -Producto
@@ -13,45 +14,33 @@ En la primera parte encontrarás una librería que contiene las siguientes opera
 ## Pre-requisitos 
 Esto necesitaras para correr la librería:
 
-Python IDLE (de tu preferencia).
+-Python 3.x
+
+-No se requieren librerías externas adicionales
+
 
 Ejecutando las pruebas ⚙️
 
-Lo único que necesitaras es correr el código, ya que las pruebas de la primera parte se encuentran de la siguiente manera:
-```python
-prettyprinting(sumaCplx(c1, c2))
-prettyprinting(restaCplx(c1, c2))
-prettyprinting(prodCplx(c1, c2))
-prettyprinting(divisionCplx(c1, c2))
-print(moduloClpx(c1))
-prettyprinting(conjugadoClpx(c1))
-prettyprinting(conversionPolarCartesianoClpx(c1))
-polprettyprinting(conversionCartesianoPolarClpx(c1))
-print(faseClpx(c1))
-```
+Las pruebas de la librería están implementadas utilizando el framework unittest de Python.
+Cada operación cuenta con al menos dos pruebas automáticas, cumpliendo con los requisitos del proyecto.
 
-Y se aplican a estos números complejos:
+Para ejecutar las pruebas, ubícate en la carpeta del proyecto y ejecuta el siguiente comando:
 
 ```python
-c1 = (2, -1)
-c2 = (-1, 3)
-
+python -m unittest test_complejos.py
 ```
 
-Obteniendo como resultado,
+Si todas las pruebas son correctas, el sistema indicará que los tests fueron ejecutados exitosamente.
 
-```python
-1+2i
-3-4i
-1+7i
--0.5-0.5i
-2.24
-2+1i
-1-1.68i
-2.24 e^(i -0.46)
--0.46
+#Restricciones 
 
-```
+-No se utiliza el tipo de dato complex de Python
+
+-Todas las operaciones se realizan manualmente usando tuplas
+
+-La librería y las pruebas automáticas están separadas
+
+Autor
 
 Autor 
 Diego Alejandro Rojas Ramírez - Librería Operaciones con Números Complejos -
